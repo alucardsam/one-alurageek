@@ -1,0 +1,199 @@
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: var(--color-bg);
+  padding: 0.5rem 0;
+}
+
+footer {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+header img,
+footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer p {
+  text-align: center;
+  text-wrap: pretty;
+  line-height: 1.5rem;
+  color: var(--color-text);
+}
+
+main {
+  width: 100%;
+  padding: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1536px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  flex: 1 1 50%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  height: 75vh;
+}
+
+h1.title {
+  font-family: "Press Start 2P", system-ui;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  padding: 0.5rem 0;
+}
+
+section#product {
+  order: 1;
+  overflow: auto;
+}
+
+div.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+div.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  background-color: var(--color-bg);
+  border: 3px solid #000;
+  border-radius: 8px;
+  padding: 0.5rem;
+  gap: 1rem;
+  max-width: 196px;
+  height: 270px;
+}
+
+div.card>img {
+  max-width: 100%;
+  border: 3px solid #000;
+  border-radius: 8px;
+  max-height: 185px;
+}
+
+.card-container--info {
+  width: 100%;
+  color: var(--color-text);
+}
+
+.card-container--value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-container--value p {
+  font-weight: 700;
+  margin: 0;
+}
+
+.card-container--value img {
+  height: 24px;
+  width: 24px;
+}
+
+section#form {
+  order: 2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+fieldset.input-container {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+input.input {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border: none;
+  border-bottom: 3px solid var(--color-bg);
+  border-radius: 5px;
+  outline: none;
+  transition: border-bottom-color 0.3s ease;
+}
+
+input.input:focus {
+  border-bottom-color: var(--color-bg);
+}
+
+input.input::placeholder {
+  color: transparent;
+}
+
+label.label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 18px;
+  color: var(--color-bg);
+  transition: top 0.3s ease, font-size 0.3s ease;
+}
+
+input.input:focus+label.label,
+input.input:valid+label.label {
+  top: 0;
+  font-size: 12px;
+  color: var(--color-bg);
+}
+
+div.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-submit {
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: 1px solid var(--color-bg);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.btn-reset {
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: 1px solid var(--color-bg);
+  color: var(--color-bg);
+}
+
+@media (max-width: 768px) {
+  section {
+    flex: 1 1 100%;
+    height: 50vh;
+  }
+
+  section#form {
+    order: 1;
+  }
+
+  section#product {
+    order: 2;
+  }
+
+  div.products {
+    justify-content: center;
+  }
+}

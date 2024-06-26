@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Bat Time model 1",
+      "price": "19.99",
+      "image": "https://i.pinimg.com/564x/25/19/f9/2519f9d0eae7416a388d2eb6f9a8ef2a.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Adventure Time",
+      "price": "15.99",
+      "image": "https://i.pinimg.com/564x/83/27/50/832750935a5215e1e9565f85da6a627f.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Bat Time model 2",
+      "price": "17.99",
+      "image": "https://i.pinimg.com/564x/57/17/f1/5717f16472c2bb86a4f9771790eb6ca8.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Johnny",
+      "price": "10.99",
+      "image": "https://i.pinimg.com/564x/87/bd/4d/87bd4d91840c53f0f6451dafbf2dcde5.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Harry Potter",
+      "price": "9.99",
+      "image": "https://i.pinimg.com/564x/d4/b1/a5/d4b1a5f19953602717dd157c7b43a639.jpg"
+    },
+    {
+      "id": "734b",
+      "name": "Naturo",
+      "price": "11.50",
+      "image": "https://i.pinimg.com/564x/a9/c1/a4/a9c1a485325ef0684fb20446ebcc2ebb.jpg"
+    },
+    {
+      "id": "452f",
+      "name": "Saitama",
+      "price": "99.99",
+      "image": "https://i.pinimg.com/564x/01/49/9c/01499cf2de9e3838037b1864d5c36f0d.jpg"
+    }
+  ]
+}

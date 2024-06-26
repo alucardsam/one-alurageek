@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="Solución al challenge AluraGeek del programa Oracle ONE #challengeonealurageek6">
+  <meta name="keywords" content="fullstack, html, css, js, front-end, logica, programacion, desarrollo, git, github">
+  <meta name="author" content="samueladriang@gmail.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>AluraGeek</title>
+</head>
+
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Logo">
+  </header>
+  <main>
+    <section id="product">
+      <h1 class="title">Mis productos:</h1>
+      <div class="products" data-list></div>
+    </section>
+    <section id="form">
+      <h1 class="title">Agregar producto:</h1>
+      <form data-form>
+        <fieldset class="input-container">
+          <input name="name" id="name" class="input" type="text" autocomplete="off" required>
+          <label class="label" for="name">Name</label>
+          <span class="mensaje-error"></span>
+        </fieldset>
+        <fieldset class="input-container">
+          <input name="price" id="price" class="input" type="text" autocomplete="off" required>
+          <label class="label" for="price">Price</label>
+          <span class="mensaje-error"></span>
+        </fieldset>
+        <fieldset class="input-container">
+          <input name="image" id="image" class="input" type="text" autocomplete="off" required>
+          <label class="label" for="image">URL Image</label>
+          <span class="mensaje-error"></span>
+        </fieldset>
+        <div class="buttons">
+          <input id="enviar" class="btn-submit" type="submit" value="Enviar">
+          <input id="limpiar" class="btn-reset" type="reset" value="Limpiar">
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <img src="assets/logo.png" alt="Logo">
+    <p>Desarrollado por Samuel Adrián González González</p>
+    <p>ALURA LATAM - 2024</p>
+  </footer>
+  <script type="module" src="./js/products.js"></script>
+</body>
+
+</html>
